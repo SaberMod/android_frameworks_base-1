@@ -2750,12 +2750,6 @@ public final class Settings {
         /** @hide */ public static final int HEADS_UP_TICKER_ON = 1;
 
         /**
-         * Add global SystemUI flags (e.g. for immersive mode)
-         * @hide
-         */
-        public static final String SYSTEM_UI_FLAGS = "system_ui_flags";
-
-        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
@@ -2846,6 +2840,16 @@ public final class Settings {
          * @hide
          */
         public static final String WHEN_TO_MAKE_WIFI_CALLS = "when_to_make_wifi_calls";
+
+        /**
+         * Setting to record how the look and feel of the system should be tweaked. This
+         * should be used in combination with magic.
+         *
+         * @see android.view.View#SYSTEM_DESIGN_FLAG_IMMERSIVE_NAV
+         * @see android.view.View#SYSTEM_DESIGN_FLAG_IMMERSIVE_STATUS
+         * @hide
+         */
+        public static final String SYSTEM_DESIGN_FLAGS = "system_design_flags";
 
         /**
          * Setting to record whether to allow quickly expanding the Quick Settings screen
@@ -5020,18 +5024,6 @@ public final class Settings {
          * @hide
          */
         public static final String ADVANCED_REBOOT = "advanced_reboot";
-
-        /**
-         * Add global SystemUI flags (e.g. for immersive mode)
-         * @hide
-         */
-        public static final String SYSTEM_UI_FLAGS = "system_ui_flags";
-
-        /**
-         * Used to store the last used system ui flags to make qs settings stick after reboot
-         * @hide
-         */
-        public static final String LAST_SYSTEM_UI_FLAGS = "last_system_ui_flags";
 
         /**
          * This are the settings to be backed up.
